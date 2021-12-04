@@ -44,8 +44,10 @@ def get_products_for_basket( data, id ):
 
     basket = data.where( data[ 'BASKET_ID' ] == id )[ ['PRODUCT_ID', 'QUANTITY' ] ].dropna()
     out = {}
-    for index, row in basket.iterrows():
-        out[ row[ 'PRODUCT_ID' ] ] = row[ 'QUANTITY' ]
+    prod_id = basket['PRODUCT_ID']
+    quantity = basket[ 'QUANTITY' ]
+    for prod, q in zip(prod_id, quantity):
+        out[ prod ] = q
     return out
 
 def generate_pairs( elements ):
@@ -116,7 +118,6 @@ def construct_graphs_for_user( data, id ):
         pairs = generate_pairs( prod )
         all_pairs.append(pairs)
 
-
     unique_pairs = get_unique_pairs( list(itertools.chain(*all_pairs)) ) # flatten
     pairs_norm = normalize_pairs( unique_pairs )
 
@@ -154,11 +155,14 @@ def write_pajek( graphs, id ):
 
 if __name__ == '__main__':
     path = 'data/dunnhumby_The-Complete-Journey/dunnhumby - The Complete Journey CSV/transaction_data.csv'
-    data = pd.read_csv("transaction_data.csv")
+    data = pd.read_csv( path )
     #products = get_products_for_basket(data, 26984851516 )
     households = get_households(data)
 
     # test
-    id = households[0]
-    gs = construct_graphs_for_user( data, id )
-    write_pajek(gs, id)
+    ids = households
+    print(f'All count: { len( ids ) }')
+    for i, id in enumerate( ids ):
+        print( f'Current: { i }' )
+        g = construct_graphs_for_user( data, id )
+        write_pajek( g, id )
