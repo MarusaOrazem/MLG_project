@@ -2,6 +2,9 @@ import pandas as pd
 import itertools
 import networkx as nx
 import os
+from numba import jit, cuda
+from pytictoc import TicToc
+
 
 def get_households( data ):
     '''Gets the ids of all the households.
@@ -154,7 +157,7 @@ def write_pajek( graphs, id ):
 
 
 if __name__ == '__main__':
-    path = 'data/dunnhumby_The-Complete-Journey/dunnhumby - The Complete Journey CSV/transaction_data.csv'
+    path = '../data/transaction_data.csv'
     data = pd.read_csv( path )
     #products = get_products_for_basket(data, 26984851516 )
     households = get_households(data)
@@ -162,7 +165,13 @@ if __name__ == '__main__':
     # test
     ids = households
     print(f'All count: { len( ids ) }')
+    t = TicToc()
+
     for i, id in enumerate( ids ):
-        print( f'Current: { i }' )
+        print( f'Parsing graph { i }' )
+        t.tic()
+
+
         g = construct_graphs_for_user( data, id )
+        t.toc(f'Done! Graph { i } took')
         write_pajek( g, id )

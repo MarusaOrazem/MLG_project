@@ -1,0 +1,1 @@
+The data for parsing is not pushed to github due to size restrictions. When pulling to your local machine, please navigate to https://www.dunnhumby.com/source-files/, download 'The Complete Journey' dataset and paste the `transaction_data.csv` file here.
