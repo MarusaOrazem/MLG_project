@@ -1,0 +1,37 @@
+*vertices 34
+1 981760 0.0 0.0 ellipse
+2 904833 0.0 0.0 ellipse
+3 948225 0.0 0.0 ellipse
+4 849688 0.0 0.0 ellipse
+5 9858585 0.0 0.0 ellipse
+6 1034267 0.0 0.0 ellipse
+7 9420064 0.0 0.0 ellipse
+8 1050915 0.0 0.0 ellipse
+9 1085604 0.0 0.0 ellipse
+10 866211 0.0 0.0 ellipse
+11 1043751 0.0 0.0 ellipse
+12 985386 0.0 0.0 ellipse
+13 960318 0.0 0.0 ellipse
+14 1000002 0.0 0.0 ellipse
+15 1121603 0.0 0.0 ellipse
+16 853448 0.0 0.0 ellipse
+17 838218 0.0 0.0 ellipse
+18 959179 0.0 0.0 ellipse
+19 911565 0.0 0.0 ellipse
+20 884686 0.0 0.0 ellipse
+21 947798 0.0 0.0 ellipse
+22 1135959 0.0 0.0 ellipse
+23 1136988 0.0 0.0 ellipse
+24 947292 0.0 0.0 ellipse
+25 1132771 0.0 0.0 ellipse
+26 5592931 0.0 0.0 ellipse
+27 1133926 0.0 0.0 ellipse
+28 1089766 0.0 0.0 ellipse
+29 1029743 0.0 0.0 ellipse
+30 870128 0.0 0.0 ellipse
+31 1109238 0.0 0.0 ellipse
+32 5568378 0.0 0.0 ellipse
+33 6979579 0.0 0.0 ellipse
+34 1023868 0.0 0.0 ellipse
+*edges
+3 3 0.005847953216374269

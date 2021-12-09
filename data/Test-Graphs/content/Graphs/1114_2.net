@@ -1,0 +1,10 @@
+*vertices 7
+1 861345 0.0 0.0 ellipse
+2 826249 0.0 0.0 ellipse
+3 1044078 0.0 0.0 ellipse
+4 910032 0.0 0.0 ellipse
+5 1124081 0.0 0.0 ellipse
+6 1098066 0.0 0.0 ellipse
+7 844179 0.0 0.0 ellipse
+*edges
+5 5 0.005847953216374269
