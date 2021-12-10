@@ -1,2 +1,12 @@
 
 data/pickles/shopping_per_hh_F_5.pkl.gz
+data/pickles/E_updates_F1_30_F2_32.pkl.gz
+data/pickles/final_tensors_F1_30_hid_[256, 256].pkl.gz
+data/pickles/shopping_per_hh_F1_30_hid_[256, 256].pkl.gz
+data/pickles/final_tensors_F1_30_hid_[256, 256].pkl.gz
+data/pickles/shopping_per_hh_F1_30_hid_[256, 256].pkl.gz
+data/pickles/shopping_per_hh_F1_30_hid_[256, 256].pkl.gz
+data/pickles/final_tensors_F1_30_hid_[256, 256].pkl.gz
+data/pickles/final_tensors_F1_30_hid_[256, 256].pkl.gz
+data/pickles/shopping_per_hh_F1_30_hid_[256, 256].pkl.gz
+*.gz
