@@ -10,3 +10,8 @@ data/pickles/final_tensors_F1_30_hid_[256, 256].pkl.gz
 data/pickles/final_tensors_F1_30_hid_[256, 256].pkl.gz
 data/pickles/shopping_per_hh_F1_30_hid_[256, 256].pkl.gz
 *.gz
+*.ai
+*.prproj
+*.avi
+*.aep
+*.mp4
