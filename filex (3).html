@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1/dist/chart.xkcd.min.js"></script>
+</head>
+<body>
+    <div id="9e308e496c8c4e81945e3a2dd7f6b623" class="chart-container" style="width: 500px">
+        <svg id="chart_9e308e496c8c4e81945e3a2dd7f6b623"></svg>
+    </div>
+    <script>
+        const svg_9e308e496c8c4e81945e3a2dd7f6b623 = document.querySelector('#chart_9e308e496c8c4e81945e3a2dd7f6b623')
+        const chart_9e308e496c8c4e81945e3a2dd7f6b623 = new chartXkcd.Line(svg_9e308e496c8c4e81945e3a2dd7f6b623, {"title": "Recall @ K for different values of K", "data": {"datasets": [{"label": "Our model", "data": [28.89, 41.0, 50.8, 56.82, 61.11, 64.68, 67.82, 69.39, 70.9, 71.55, 72.5, 73.0, 73.53, 73.67, 73.79, 74.43, 75.03, 75.25]}, {"label": "Most common (HH)", "data": [14.99, 16.63, 18.2, 19.19, 20.02, 21.3, 22.05, 22.96, 24.42, 24.85, 25.0, 25.43, 25.66, 25.72, 25.86, 26.48, 27.05, 27.06]}, {"label": "Most common (overall)", "data": [8.57, 10.04, 11.44, 12.83, 13.82, 15.12, 16.37, 16.65, 16.94, 17.21, 17.74, 18.17, 18.74, 19.06, 19.47, 20.0, 20.13, 20.61]}], "labels": [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95]}, "xLabel": "K", "yLabel": "mean R@K (%)", "options": {"yTickCount": 3, "legendPosition": 1}});
+    </script>
+</body>
+</html>
