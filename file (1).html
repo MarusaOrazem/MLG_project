@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1/dist/chart.xkcd.min.js"></script>
+</head>
+<body>
+    <div id="ed12264058fd49878d9ea5d27b8df2ff" class="chart-container" style="width: 500px">
+        <svg id="chart_ed12264058fd49878d9ea5d27b8df2ff"></svg>
+    </div>
+    <script>
+        const svg_ed12264058fd49878d9ea5d27b8df2ff = document.querySelector('#chart_ed12264058fd49878d9ea5d27b8df2ff')
+        const chart_ed12264058fd49878d9ea5d27b8df2ff = new chartXkcd.Line(svg_ed12264058fd49878d9ea5d27b8df2ff, {"title": "Recall @ K for different values of K", "data": {"datasets": [{"label": "Our model", "data": [0.29, 0.41, 0.51, 0.57, 0.61, 0.65, 0.68, 0.69, 0.71, 0.72, 0.72, 0.73, 0.74, 0.74, 0.74, 0.74, 0.75, 0.75]}, {"label": "Most common (HH)", "data": [0.15, 0.17, 0.18, 0.19, 0.2, 0.21, 0.22, 0.23, 0.24, 0.25, 0.25, 0.25, 0.26, 0.26, 0.26, 0.26, 0.27, 0.27]}, {"label": "Most common (overall)", "data": [0.09, 0.1, 0.11, 0.13, 0.14, 0.15, 0.16, 0.17, 0.17, 0.17, 0.18, 0.18, 0.19, 0.19, 0.19, 0.2, 0.2, 0.21]}], "labels": [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95]}, "xLabel": "K", "yLabel": "R@K", "options": {"yTickCount": 3, "legendPosition": 1}});
+    </script>
+</body>
+</html>
